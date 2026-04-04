@@ -1,0 +1,16 @@
+# Program to handle division by zero
+
+num1 = int(input("Enter numerator: "))
+num2 = int(input("Enter denominator: "))
+
+try:
+    result = num1 / num2
+    print("Result:", result)
+
+# This block handles division by zero error
+except ZeroDivisionError as e:
+    print(e)
+
+# This block always executes (whether error occurs or not)
+finally:
+    print("Program executed.")
